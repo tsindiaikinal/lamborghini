@@ -1,0 +1,112 @@
+/* ------ PALLETE ------ */
+.palette {
+  position: relative;
+  width: 295px;
+  height: 185px;
+  &-name {
+    position: absolute;
+    bottom: 50px;
+    left: -120px;
+
+    color: rgba(0, 0, 0, 0.8);
+  }
+  &-container {
+    align-self: flex-end;
+  }
+}
+
+.paint {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  &:before {
+    position: absolute;
+    top: 30%;
+    left: 8%;
+    width: 50px;
+    height: 50px;
+    content: url("../img/icons/icons.svg#paint-can");
+    transition: all 0.3s;
+    opacity: 0;
+
+    filter: drop-shadow(0 0 0.3mm #fff);
+  }
+  &:hover::before {
+    opacity: 1;
+  }
+  &-color {
+    width: 100%;
+    height: 100%;
+  }
+  &-yellow {
+    top: 0;
+    left: 140px;
+
+    filter: drop-shadow(1mm 1mm 1mm rgba(253, 197, 14, 1));
+  }
+  &-orange {
+    top: 48px;
+    left: 90px;
+
+    filter: drop-shadow(1mm 1mm 1mm rgba(233, 124, 24, 1));
+  }
+  &-green {
+    top: 48px;
+    left: 190px;
+
+    filter: drop-shadow(1mm 1mm 1mm rgba(53, 98, 46, 1));
+  }
+  &-graphite {
+    top: 95px;
+    left: 42px;
+
+    filter: drop-shadow(1mm 1mm 1mm rgba(57, 59, 58, 1));
+  }
+  &-blue {
+    top: 95px;
+    left: 140px;
+
+    filter: drop-shadow(1mm 1mm 1mm rgba(11, 58, 114, 1));
+  }
+  &-white {
+    top: 95px;
+    left: 237px;
+    filter: drop-shadow(1mm 1mm 1mm rgba(0, 0, 0, 0.5));
+  }
+}
+
+/* -------------------- MEDIA QUERIIS ------------------ */
+
+
+@media screen and (max-width: $xxl) {
+}
+@media screen and (max-width: $xl) {
+}
+@media screen and (max-width: $lg) {
+  .palette {
+  width: 295px;
+  height: 185px;
+  &-name {
+    bottom: 50px;
+    left: -120px;
+  }
+}
+
+.paint {
+  width: 60px;
+  height: 60px;
+  &:before {
+    top: 30%;
+    left: 8%;
+    width: 50px;
+    height: 50px;
+  }
+}
+}
+@media screen and (max-width: $md) {
+}
+@media screen and (max-width: $sm) {
+}
+@media screen and (max-width: $xs) {
+}
+/* ----------------------------------------------------------- */

@@ -1,0 +1,184 @@
+/* ---- DEFAULT BUTTON ---------- */
+.btn {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+/* ----------------------------- */
+
+/* ------------ 3D BUTTON ------------- */
+.btn-3d {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 277px;
+  padding: 15px 25px;
+
+  text-align: left;
+
+  color: #fff;
+  border-radius: 15px;
+  background-color: #5a5a5a;
+
+  font-size: 1.2rem;
+  line-height: 1.8;
+  &--position {
+    align-self: flex-end;
+  }
+}
+.btn-3d:hover .hexagon-btn--light {
+  fill: #fff;
+}
+
+.btn-3d:hover .hexagon-icon--light {
+  stroke: #fff;
+}
+
+.btn-3d:hover .inset-svg-icon--light {
+  stroke: #202020;
+}
+/* --------------------------------- */
+
+/* ------ WATCH  BUTTON ------ */
+
+.watch-btn {
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.5s;
+  border: 3px solid #d9d9d9;
+  border-radius: 12px;
+  &:hover {
+    color: #fff;
+    background-color: #000;
+  }
+  &__icon {
+    display: inline-block;
+
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+
+  &__name {
+    color: #fff;
+
+    font-size: 1.3rem;
+    font-weight: 400;
+  }
+}
+/* ---------------- */
+
+/* --- HEXAGON BUTTON --- */
+.hexagon-btn {
+  width: 50px;
+  height: 55px;
+
+  transition: fill 0.3s ease-out;
+
+  fill: transparent;
+  &--light {
+    position: static;
+  }
+  &--dark {
+    position: static;
+  }
+}
+
+.hexagon-icon,
+.inset-svg-icon {
+  stroke: #808080;
+}
+
+.inset-svg-icon {
+  &__text {
+    font-size: 0.625rem;
+    font-weight: 300;
+  }
+}
+
+.hexagon-icon--light,
+.inset-svg-icon--light {
+  stroke: #fff;
+}
+
+.hexagon-btn:hover .hexagon-icon {
+  stroke: #202020;
+}
+
+.hexagon-btn:hover .inset-svg-icon {
+  stroke: #fff;
+}
+
+.hexagon-btn:hover {
+  fill: #202020;
+}
+
+.hexagon-btn:hover .hexagon-icon--dark {
+  stroke: #202020;
+}
+
+.hexagon-btn--light:hover {
+  fill: #fff;
+}
+
+.hexagon-btn:hover .hexagon-icon--light {
+  stroke: #fff;
+}
+
+.hexagon-btn:hover .inset-svg-icon--light {
+  stroke: #202020;
+}
+/* -------------------------------------- */
+
+/* ----- BURGER MENU ------- */
+.icon-menu {
+  display: none;
+}
+
+/* ------------------------- */
+
+/* -------------------- MEDIA QUERIIS ------------------ */
+
+@media screen and (max-width: $xxl) {
+}
+@media screen and (max-width: $xl) {
+}
+@media screen and (max-width: $lg) {
+}
+@media screen and (max-width: $md) {
+  .icon-menu {
+    position: relative;
+    z-index: 2;
+    flex: 0 0 35px;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: height 0.3s;
+    &:hover {
+      height: 35px;
+    }
+    &__line {
+      height: 1px;
+      background-color: #fff;
+    }
+  }
+  .icon-close.icon-menu {
+    .icon-menu__line:nth-child(2) {
+      background-color: orange;
+    }
+  }
+}
+@media screen and (max-width: $sm) {
+}
+@media screen and (max-width: $xs) {
+}
+
+/* ------------------------------------ */

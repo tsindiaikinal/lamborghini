@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('html/head.html', {"title":"Lamborghini - Home"})
+  <body>
+    <div class="container">
+      @@include('html/header.html',{})
+
+      <main class="main">
+        <section class="banner">
+          <div class="banner__container">
+            <nav class="breadcrumbs">
+              <ol class="breadcrumbs__container">
+                <li class="breadcrumbs__item">
+                  <a class="breadcrumbs__link" href="/lamobrghini"
+                    >lamobrghini</a
+                  >
+                </li>
+                <li class="breadcrumbs__item">
+                  <a class="breadcrumbs__link" href="/models">models</a>
+                </li>
+                <li class="breadcrumbs__item">
+                  <a class="breadcrumbs__link" href="/urus">urus</a>
+                </li>
+              </ol>
+            </nav>
+            <div class="main-title">
+              <h1 class="main-title__name">Lamborghini</h1>
+              <h2 class="main-title__model">Urus</h2>
+            </div>
+            <div class="model-info">
+              <div class="model-info__block">
+                <h3 class="model-info__title">POWER (CV) / POWER (KW)</h3>
+                <p class="model-info__data">650 CV / 478 KW</p>
+              </div>
+              <div class="model-info__block">
+                <h3 class="model-info__title">MAX. SPEED</h3>
+                <p class="model-info__data">305km /h</p>
+              </div>
+              <div class="model-info__block">
+                <h3 class="model-info__title">0-100km /h</h3>
+                <p class="model-info__data">3.6s</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="interactive-view">
+          <div class="interactive-view__container">
+            <div class="interactive-view__info">
+              <h2 class="section-title section-title--black">
+                Interactive Experience
+              </h2>
+              <div class="interactive-view__message">
+                <p class="message">
+                  Here is a chance to familiarize yourself with the URUS <br />
+                  masterpiece by immersing yourself in our interactive <br />
+                  experience.
+                </p>
+                <span class="line-dotted">.....................</span>
+              </div>
+            </div>
+            <div class="interactive-view__place">
+              <img
+                class="interactive-view__elem"
+                src="@img/urus-graphite.png"
+                alt="Car"
+              />
+              <div class="platform"></div>
+            </div>
+            <div class="palette-container">
+              <div class="palette">
+                <span class="palette-name"
+                  >Choose Urus Look</span
+                >
+                <button class="btn paint paint-yellow" data-color="yellow">
+                  <svg
+                    class="paint-color"
+                    width="133"
+                    height="152"
+                    viewbox="0 0 133 152"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M66.5 0L133 35.2318V116.265L66.5 152L0 116.265L0 35.2318L66.5 0Z"
+                      fill="#FDC50E"
+                    />
+                  </svg>
+                </button>
+                <button class="btn paint paint-orange" data-color="orange">
+                  <svg
+                    class="paint-color"
+                    width="133"
+                    height="152"
+                    viewbox="0 0 133 152"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M66.5 0L133 35.2318V116.265L66.5 152L0 116.265L0 35.2318L66.5 0Z"
+                      fill="#E97C18"
+                    />
+                  </svg>
+                </button>
+                <button class="btn paint paint-green" data-color="green">
+                  <svg
+                    class="paint-color"
+                    width="133"
+                    height="152"
+                    viewbox="0 0 133 152"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M66.5 0L133 35.2318V116.265L66.5 152L0 116.265L0 35.2318L66.5 0Z"
+                      fill="#35622E"
+                    />
+                  </svg>
+                </button>
+                <button class="btn paint paint-graphite" data-color="graphite">
+                  <svg
+                    class="paint-color"
+                    width="133"
+                    height="152"
+                    viewbox="0 0 133 152"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M66.5 0L133 35.2318V116.265L66.5 152L0 116.265L0 35.2318L66.5 0Z"
+                      fill="#393B3A"
+                    />
+                  </svg>
+                </button>
+                <button class="btn paint paint-blue" data-color="blue">
+                  <svg
+                    class="paint-color"
+                    width="133"
+                    height="152"
+                    viewbox="0 0 133 152"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M66.5 0L133 35.2318V116.265L66.5 152L0 116.265L0 35.2318L66.5 0Z"
+                      fill="#0B3A72"
+                    />
+                  </svg>
+                </button>
+                <button class="btn paint paint-white" data-color="white">
+                  <svg
+                    class="paint-color"
+                    width="133"
+                    height="152"
+                    viewbox="0 0 133 152"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M66.5 0L133 35.2318V116.265L66.5 152L0 116.265L0 35.2318L66.5 0Z"
+                      stroke="#808080"
+                      fill="#ffffff"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="description-wrapper">
+          <section class="section section-overview">
+            <div class="section__container">
+              <h3 class="section__subtitle">overview</h3>
+              <p class="section__text">
+                The soul of a super sports car and the functionality of an SUV:
+                Lamborghini Urus is the first Super Sport Utility Vehicle in the
+                world. With extreme proportions, breathtaking design,
+                extraordinary driving dynamics and heart-pounding performance,
+                Urus represents freedom in its quintessential state. You can
+                experience any road, from track to the sand, ice, gravel or
+                rocks, thus unlocking any road. You can explore any new terrain,
+                thus expressing yourself.
+              </p>
+            </div>
+          </section>
+          <section class="section section-engine">
+            <div class="section__container">
+              <h3 class="section__subtitle">fell the engine</h3>
+              <p class="section__text">
+                With its unmistakable roar, the engine releases all of its power and expresses the pure Lamborghini DNA.
+                <br />
+                Use headphones or earphones for a 8D sound experience.
+              </p>
+              <div class="audio">
+                <div class="audio__headphones-icon"></div>
+                <div class="spectrum audio__spectrum">
+                  <span class="spectrum__elem"></span
+                  ><span class="spectrum__elem"></span
+                  ><span class="spectrum__elem"></span
+                  ><span class="spectrum__elem"></span
+                  ><span class="spectrum__elem"></span
+                  ><span class="spectrum__elem"></span
+                  ><span class="spectrum__elem"></span
+                  ><span class="spectrum__elem"></span
+                  ><span class="spectrum__elem"></span
+                  ><span class="spectrum__elem"></span
+                  ><span class="spectrum__elem"></span
+                  ><span class="spectrum__elem"></span
+                  ><span class="spectrum__elem"></span>
+                  <button class="btn audio__play-btn">
+                    <img
+                      class="icon-play hexagon-btn"
+                      src="@img/icon_svg/play-btn.svg"
+                      alt="Audio player"
+                    />
+                  </button>
+                  <span class="spectrum__elem"></span
+                  ><span class="spectrum__elem"></span
+                  ><span class="spectrum__elem"></span
+                  ><span class="spectrum__elem"></span
+                  ><span class="spectrum__elem"></span
+                  ><span class="spectrum__elem"></span
+                  ><span class="spectrum__elem"></span
+                  ><span class="spectrum__elem"></span
+                  ><span class="spectrum__elem"></span
+                  ><span class="spectrum__elem"></span
+                  ><span class="spectrum__elem"></span
+                  ><span class="spectrum__elem"></span
+                  ><span class="spectrum__elem"></span>
+                </div>
+                <audio class="audio-player audio__elem">
+                  <source src="files/audio/urus_engine.mp3" type="audio/mpeg" />
+                  <source
+                    src="files/audio/urus_engine_mpeg-1.mp3"
+                    type="audio/mpeg"
+                  />
+                  <p>Your browser does not support the audio tag.</p>
+                  <p>Ваш браузер не поддерживает аудио тег.</p>
+                </audio>
+              </div>
+            </div>
+          </section>
+        </div>
+        <section class="section section-exterior">
+          <div class="section__container section__container--exterior">
+              <h3 class="section__subtitle">exterior</h3>
+              <p class="section__text">
+                Its design assumes multiple guises: sporty, elegant and
+                off-road. Muscular surfaces lend a decisive appearance,
+                while the massive tires and wheels impart the look of a
+                luxury super sports car. Every surface places a focus on
+                functionality. The signature style of Lamborghini is
+                immediately recognizable, with details such as Y-shaped and
+                hexagonal details, the front hood with
+                center peak, and the crossed lines on the rear hood.
+                Urus is the lowest SUV in its segment.
+              </p>
+              <button class="btn btn-3d">
+                <svg
+                  class="hexagon-btn hexagon-btn--light"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewbox="0 0 50.464 58.271"
+                  fill="none"
+                >
+                  <g stroke-width="1" transform="translate(-1624 -187.923)">
+                    <path
+                      class="hexagon-icon hexagon-icon--light"
+                      d="M50.464 43.992L25.732 58.271 1 43.992V15.434L25.732 1.155l24.732 14.279z"
+                      transform="translate(1623.5 187.345)"
+                    ></path>
+                    <g
+                      class="inset-svg-icon inset-svg-icon--light"
+                      transform="translate(-66 1)"
+                    >
+                      <text
+                        class="inset-svg-icon__text"
+                        transform="translate(1709.5 220.5)"
+                      >
+                        <tspan x="0" y="0">3D</tspan>
+                      </text>
+                      <g transform="translate(1595.5 -1629.7)">
+                        <g
+                          fill="none"
+                          stroke-dasharray="66"
+                          transform="translate(108 1861.25) rotate(264)"
+                        >
+                          <ellipse
+                            stroke="none"
+                            cx="1.338"
+                            cy="1.338"
+                            class=""
+                            rx="1.338"
+                            ry="1.338"
+                          ></ellipse>
+                          <ellipse
+                            fill="none"
+                            cx="13.338"
+                            cy="13.338"
+                            class=""
+                            rx="12.838"
+                            ry="12.838"
+                          ></ellipse>
+                        </g>
+                        <path
+                          class=""
+                          d="M0 0l3.043 2.323L6.086 0"
+                          transform="rotate(92 -823.135 974.633)"
+                        ></path>
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+                <span>Exterior design<br />3D detailed view</span>
+              </button>
+          </div>
+          <div class="section__img section__img--exterior"></div>
+        </section>
+        <section class="section section-interior">
+          <div class="section__img section__img--interior"></div>
+          <div class="section__container section__container--interior">
+            <h3 class="section__subtitle">interior</h3>
+            <p class="section__text">
+              The luxury of Italian craftsmanship meets state-of-the-art
+              technology. Aerospace-inspired design and
+              driver-oriented instrumentation, featuring three TFT
+              screens, make the driving experience more
+              comfortable and engaging.
+              The interior can be customized and made even more
+              sporty or elegant, thanks to the wide range of colors
+              and materials: leather, Alcantara, wood, aluminum or
+              carbon-fiber finishes.
+            </p>
+            <button class="btn btn-3d btn-3d--position">
+              <svg
+                class="hexagon-btn hexagon-btn--light"
+                xmlns="http://www.w3.org/2000/svg"
+                viewbox="0 0 50.464 58.271"
+                fill="none"
+              >
+                <g stroke-width="1" transform="translate(-1624 -187.923)">
+                  <path
+                    class="hexagon-icon hexagon-icon--light"
+                    d="M50.464 43.992L25.732 58.271 1 43.992V15.434L25.732 1.155l24.732 14.279z"
+                    transform="translate(1623.5 187.345)"
+                  ></path>
+                  <g
+                    class="inset-svg-icon inset-svg-icon--light"
+                    transform="translate(-66 1)"
+                  >
+                    <text
+                      class="inset-svg-icon__text"
+                      transform="translate(1709.5 220.5)"
+                    >
+                      <tspan x="0" y="0">3D</tspan>
+                    </text>
+                    <g transform="translate(1595.5 -1629.7)">
+                      <g
+                        fill="none"
+                        stroke-dasharray="66"
+                        transform="translate(108 1861.25) rotate(264)"
+                      >
+                        <ellipse
+                          stroke="none"
+                          cx="1.338"
+                          cy="1.338"
+                          class=""
+                          rx="1.338"
+                          ry="1.338"
+                        ></ellipse>
+                        <ellipse
+                          fill="none"
+                          cx="13.338"
+                          cy="13.338"
+                          class=""
+                          rx="12.838"
+                          ry="12.838"
+                        ></ellipse>
+                      </g>
+                      <path
+                        class=""
+                        d="M0 0l3.043 2.323L6.086 0"
+                        transform="rotate(92 -823.135 974.633)"
+                      ></path>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+              <span>Interior design<br />3D detailed view</span>
+            </button>
+          </div>
+        </section>
+        <div class="media">
+          <div class="media__container">
+            <div class="video">
+              <button class="btn watch-btn">
+                <img
+                  class="watch-btn__icon"
+                  src="img/icon_svg/watch.svg"
+                  alt="Icon play"
+                /><span class="watch-btn__name">Watch Video</span>
+              </button>
+              <video
+                class="video__player"
+                poster="img/car-ride.jpg"
+                preload="none"
+                crossorigin="anonymous"
+              >
+                <source src="files/video/service.mp4" type="video/mp4" />
+                <source src="files/video/service.webm" type="video/webm" />
+                Sorry, your browser doesn't support embedded videos.
+              </video>
+            </div>
+          </div>
+        </div>
+        I
+        <div class="specification">
+          <h2 class="section-title section-title--specification">
+            Feature & Specs
+          </h2>
+          <div class="specification__container">
+            <div class="swiper slider-img">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    class="swiper-img slider-img__img"
+                    src="@img/engine.jpg"
+                    alt="Slide"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    class="swiper-img slider-specification__img"
+                    src="@img/safety.jpg"
+                    alt="Slide"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    class="swiper-img slider-specification__img"
+                    src="@img/anima.jpg"
+                    alt="Slide"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    class="swiper-img slider-specification__img"
+                    src="@img/sospensioni.jpg"
+                    alt="Slide"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    class="swiper-img slider-specification__img"
+                    src="@img/Info.jpg"
+                    alt="Slide"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="swiper slider-specification">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <div class="slider-specification__content">
+                    <h3
+                      class="section__subtitle slider-specification__section-subtitle"
+                    >
+                      ENGINE & TRANSMISSION
+                    </h3>
+                    <h4>ENGINE</h4>
+                    <p class="text slider-specification__text">
+                      The Urus has a V8 twin-turbocharged engine with a maximum
+                      power output of 650 hp, and offers the best
+                      power-to-weight ratio in the SUV segment.
+                      <br />
+                      <br />
+                      Fuel consumption and emission values*; Fuel consumption
+                      combined: 12,7 l/100km (WLTP); CO2-emissions combined: 325
+                      g/km (WLTP)
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="slider-specification__content">
+                    <h3
+                      class="section__subtitle slider-specification__section-subtitle"
+                    >
+                      Driving Dynamics
+                    </h3>
+                    <h4>SAFETY AND DRIVER ASSISTANCE SYSTEMS</h4>
+                    <p class="text slider-specification__text">
+                      Equipped with the most current driving and safety systems,
+                      the Urus can be personalized to meet customer
+                      requirements.
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="slider-specification__content">
+                    <h3
+                      class="section__subtitle slider-specification__section-subtitle"
+                    >
+                      Driving Dynamics
+                    </h3>
+                    <h4>ANIMA</h4>
+                    <p class="text slider-specification__text">
+                      The ANIMA Selector is at the heart of Lamborghini driving
+                      dynamics, the key control system for choosing the desired
+                      setup.
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="slider-specification__content">
+                    <h3
+                      class="section__subtitle slider-specification__section-subtitle"
+                    >
+                      Driving Dynamics
+                    </h3>
+                    <h4>TRANSMISSION AND CHASSIS</h4>
+                    <p class="text slider-specification__text">
+                      The Urus is equipped with cutting-edge vehicle dynamics
+                      control systems.
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="slider-specification__content">
+                    <h3
+                      class="section__subtitle slider-specification__section-subtitle"
+                    >
+                      Driving Dynamics
+                    </h3>
+                    <h4>TECHNOLOGY & INFOTAINMENT</h4>
+                    <p class="text slider-specification__text">
+                      The Lamborghini Infotainment System III (LIS III) features
+                      two intuitive touchscreens with haptic feedback,
+                      interactive voice commands and three innovative
+                      high-definition displays.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- If we need navigation buttons -->
+              <div class="slider-specification__navigation-container">
+                <button class="btn">
+                  <svg
+                    class="swiper-button-prev btn-prev hexagon-btn hexagon-btn--dark"
+                    width="143"
+                    height="163"
+                    viewbox="0 0 143 163"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      class="hexagon-icon hexagon-icon--dark"
+                      d="M72.724 3.25133L71.7138 2.71609L70.7035 3.25133L4.20348 38.4831L3.05579 39.0912V40.39V121.423V122.713L4.19227 123.324L70.6923 159.059L71.7138 159.608L72.7352 159.059L139.235 123.324L140.372 122.713V121.423V40.39V39.0912L139.224 38.4831L72.724 3.25133Z"
+                      stroke-width="4.31592"
+                    />
+                    <path
+                      class="inset-svg-icon inset-svg-icon--dark"
+                      d="M84.2104 62L60 81.4752L84.2104 100.95"
+                      stroke-width="5.39489"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+                <button class="btn">
+                  <svg
+                    width="142"
+                    height="163"
+                    viewbox="0 0 142 163"
+                    class="swiper-button-next btn-next hexagon-btn hexagon-btn--dark"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      class="hexagon-icon hexagon-icon--dark"
+                      d="M72.1109 3.25133L71.1006 2.71609L70.0903 3.25133L3.59032 38.4831L2.44263 39.0912V40.39V121.423V122.713L3.57911 123.324L70.0791 159.059L71.1006 159.608L72.1221 159.059L138.622 123.324L139.759 122.713V121.423V40.39V39.0912L138.611 38.4831L72.1109 3.25133Z"
+                      stroke-width="4.31592"
+                    />
+                    <path
+                      class="inset-svg-icon inset-svg-icon--dark"
+                      d="M59 100.951L83.2104 81.4759L59 62.0007"
+                      stroke-width="5.39489"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper slider">
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img class="swiper-img" src="@img/urus_01.jpg" alt="Slide" />
+            </div>
+            <div class="swiper-slide">
+              <img class="swiper-img" src="@img/urus_02.jpg" alt="Slide" />
+            </div>
+            <div class="swiper-slide">
+              <img class="swiper-img" src="@img/urus_03.jpg" alt="Slide" />
+            </div>
+            <div class="swiper-slide">
+              <img class="swiper-img" src="@img/urus_04.jpg" alt="Slide" />
+            </div>
+            <div class="swiper-slide">
+              <img class="swiper-img" src="@img/urus_05.jpg" alt="Slide" />
+            </div>
+            <div class="swiper-slide">
+              <img class="swiper-img" src="@img/urus_06.jpg" alt="Slide" />
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="slider-navigation__container">
+            <button class="btn">
+              <svg
+                class="swiper-button-prev btn-prev hexagon-btn hexagon-btn--light"
+                width="143"
+                height="163"
+                viewbox="0 0 143 163"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  class="hexagon-icon hexagon-icon--light"
+                  d="M72.724 3.25133L71.7138 2.71609L70.7035 3.25133L4.20348 38.4831L3.05579 39.0912V40.39V121.423V122.713L4.19227 123.324L70.6923 159.059L71.7138 159.608L72.7352 159.059L139.235 123.324L140.372 122.713V121.423V40.39V39.0912L139.224 38.4831L72.724 3.25133Z"
+                  stroke-width="4.31592"
+                />
+                <path
+                  class="inset-svg-icon inset-svg-icon--light"
+                  d="M84.2104 62L60 81.4752L84.2104 100.95"
+                  stroke-width="5.39489"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+            <button class="btn">
+              <svg
+                width="142"
+                height="163"
+                viewbox="0 0 142 163"
+                class="swiper-button-next btn-next hexagon-btn hexagon-btn--light"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  class="hexagon-icon hexagon-icon--light"
+                  d="M72.1109 3.25133L71.1006 2.71609L70.0903 3.25133L3.59032 38.4831L2.44263 39.0912V40.39V121.423V122.713L3.57911 123.324L70.0791 159.059L71.1006 159.608L72.1221 159.059L138.622 123.324L139.759 122.713V121.423V40.39V39.0912L138.611 38.4831L72.1109 3.25133Z"
+                  stroke-width="4.31592"
+                />
+                <path
+                  class="inset-svg-icon inset-svg-icon--light"
+                  d="M59 100.951L83.2104 81.4759L59 62.0007"
+                  stroke-width="5.39489"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </main>
+      @@include('html/footer.html',{})
+    </div>
+    <script src="js/script.min.js"></script>
+  </body>
+</html>

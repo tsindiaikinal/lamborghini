@@ -1,0 +1,15 @@
+/* ------ VIDEO ------- */
+.video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  padding: 25px;
+  border: 25px solid rgba(255, 255, 255, 0.3);
+  background-color: rgba(204, 204, 204, 0.5);
+  &__player {
+    width: 100%;
+  }
+}
+/* ------------------------------------------------ */

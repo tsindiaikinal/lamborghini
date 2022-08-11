@@ -1,0 +1,81 @@
+/* ----- AUDIO ---- */
+.audio {
+  display: inline-flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: space-between;
+
+  max-width: 420px;
+  height: 110px;
+  padding: 20px 10px;
+
+  border-radius: 15px;
+  background-color: #5a5a5a;
+  &__headphones-icon {
+    width: 50px;
+    height: 55px;
+
+    background-image: url("../img/icons/icons.svg#headphones");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  &__spectrum {
+    display: flex;
+    align-items: center;
+    flex: 0 1 auto;
+
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  &__play-btn {
+    flex: 0 0 auto;
+
+    transition: filter 0.3s;
+    &:hover {
+      filter: drop-shadow(0 0 2mm rgba(255, 255, 255, 0.7));
+    }
+  }
+
+  // &__elem {}
+}
+.spectrum {
+  &__elem {
+    display: block;
+    flex: 0 0 auto;
+
+    width: 2px;
+    height: 15px;
+    margin: 0 4px;
+
+    background-color: #fff;
+    &:first-child {
+      margin-left: 0;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+// .icon-play {}
+.audio-player {
+  height: 110px;
+}
+
+/* -------------------- MEDIA QUERIIS ------------------ */
+
+
+@media screen and (max-width: $xxl) {
+}
+@media screen and (max-width: $xl) {
+}
+@media screen and (max-width: $lg) {
+}
+@media screen and (max-width: $md) {
+}
+@media screen and (max-width: $sm) {
+}
+@media screen and (max-width: $xs) {
+}
+/* ---------------------- */

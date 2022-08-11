@@ -1,0 +1,32 @@
+.breadcrumbs {
+  padding-top: 10.5rem;
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  &__item {
+    list-style: none;
+    &:after {
+      display: inline-block;
+
+      content: "/";
+      letter-spacing: 6px;
+
+      color: #fff;
+
+      font-size: 1rem;
+      font-weight: 600;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    text-transform: uppercase;
+
+    color: #fff;
+
+    font-weight: 700;
+  }
+}
