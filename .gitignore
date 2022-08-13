@@ -1,6 +1,6 @@
 # directories
 node_modules
-dist
+/dist
 
 #files
-tasks/config/ftp.js
+/gulp/config/ftp.js

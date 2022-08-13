@@ -242,9 +242,23 @@ ul[class="socials"] {
       width: 100%;
     }
   }
+
+  .menu--footer {
+    .menu__link {
+      font-size: 1.2rem;
+    }
+  }
+
   .socials {
     justify-content: flex-start;
     padding-bottom: 40px;
+    &__item {
+      margin-right: 35px;
+    }
+    &__link {
+      width: 40px;
+      height: 40px;
+    }
   }
 }
 /* ------------------------ */
