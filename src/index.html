@@ -4,7 +4,23 @@
   <body>
     <div class="container">
       @@include('html/header.html',{})
-
+      <form class="form-search">
+        <div class="form-search__container">
+          <span class="close-popup">&#10005;</span>
+          <h3 class="form-search__title">SEARCH IN THE WEBSITE</h3>
+          <div class="form-search__body">
+            <input
+              class="form-search__field"
+              type="text"
+              name="search"
+              id="search-field"
+              placeholder="Search in the website"
+            />
+            <button class="form-search__btn btn" type="submit">SEARCH</button>
+          </div>
+          <div class="result-search"></div>
+        </div>
+      </form>
       <main class="main">
         <section class="banner">
           <div class="banner__container">
@@ -68,9 +84,7 @@
             </div>
             <div class="palette-container">
               <div class="palette">
-                <span class="palette-name"
-                  >Choose Urus Look</span
-                >
+                <span class="palette-name">Choose Urus Look</span>
                 <button class="btn paint paint-yellow" data-color="yellow">
                   <svg
                     class="paint-color"
@@ -186,7 +200,8 @@
             <div class="section__container">
               <h3 class="section__subtitle">fell the engine</h3>
               <p class="section__text">
-                With its unmistakable roar, the engine releases all of its power and expresses the pure Lamborghini DNA.
+                With its unmistakable roar, the engine releases all of its power
+                and expresses the pure Lamborghini DNA.
                 <br />
                 Use headphones or earphones for a 8D sound experience.
               </p>
@@ -242,75 +257,74 @@
         </div>
         <section class="section section-exterior">
           <div class="section__container section__container--exterior">
-              <h3 class="section__subtitle">exterior</h3>
-              <p class="section__text">
-                Its design assumes multiple guises: sporty, elegant and
-                off-road. Muscular surfaces lend a decisive appearance,
-                while the massive tires and wheels impart the look of a
-                luxury super sports car. Every surface places a focus on
-                functionality. The signature style of Lamborghini is
-                immediately recognizable, with details such as Y-shaped and
-                hexagonal details, the front hood with
-                center peak, and the crossed lines on the rear hood.
-                Urus is the lowest SUV in its segment.
-              </p>
-              <button class="btn btn-3d">
-                <svg
-                  class="hexagon-btn hexagon-btn--light"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewbox="0 0 50.464 58.271"
-                  fill="none"
-                >
-                  <g stroke-width="1" transform="translate(-1624 -187.923)">
-                    <path
-                      class="hexagon-icon hexagon-icon--light"
-                      d="M50.464 43.992L25.732 58.271 1 43.992V15.434L25.732 1.155l24.732 14.279z"
-                      transform="translate(1623.5 187.345)"
-                    ></path>
-                    <g
-                      class="inset-svg-icon inset-svg-icon--light"
-                      transform="translate(-66 1)"
+            <h3 class="section__subtitle">exterior</h3>
+            <p class="section__text">
+              Its design assumes multiple guises: sporty, elegant and off-road.
+              Muscular surfaces lend a decisive appearance, while the massive
+              tires and wheels impart the look of a luxury super sports car.
+              Every surface places a focus on functionality. The signature style
+              of Lamborghini is immediately recognizable, with details such as
+              Y-shaped and hexagonal details, the front hood with center peak,
+              and the crossed lines on the rear hood. Urus is the lowest SUV in
+              its segment.
+            </p>
+            <button class="btn btn-3d">
+              <svg
+                class="hexagon-btn hexagon-btn--light"
+                xmlns="http://www.w3.org/2000/svg"
+                viewbox="0 0 50.464 58.271"
+                fill="none"
+              >
+                <g stroke-width="1" transform="translate(-1624 -187.923)">
+                  <path
+                    class="hexagon-icon hexagon-icon--light"
+                    d="M50.464 43.992L25.732 58.271 1 43.992V15.434L25.732 1.155l24.732 14.279z"
+                    transform="translate(1623.5 187.345)"
+                  ></path>
+                  <g
+                    class="inset-svg-icon inset-svg-icon--light"
+                    transform="translate(-66 1)"
+                  >
+                    <text
+                      class="inset-svg-icon__text"
+                      transform="translate(1709.5 220.5)"
                     >
-                      <text
-                        class="inset-svg-icon__text"
-                        transform="translate(1709.5 220.5)"
+                      <tspan x="0" y="0">3D</tspan>
+                    </text>
+                    <g transform="translate(1595.5 -1629.7)">
+                      <g
+                        fill="none"
+                        stroke-dasharray="66"
+                        transform="translate(108 1861.25) rotate(264)"
                       >
-                        <tspan x="0" y="0">3D</tspan>
-                      </text>
-                      <g transform="translate(1595.5 -1629.7)">
-                        <g
-                          fill="none"
-                          stroke-dasharray="66"
-                          transform="translate(108 1861.25) rotate(264)"
-                        >
-                          <ellipse
-                            stroke="none"
-                            cx="1.338"
-                            cy="1.338"
-                            class=""
-                            rx="1.338"
-                            ry="1.338"
-                          ></ellipse>
-                          <ellipse
-                            fill="none"
-                            cx="13.338"
-                            cy="13.338"
-                            class=""
-                            rx="12.838"
-                            ry="12.838"
-                          ></ellipse>
-                        </g>
-                        <path
+                        <ellipse
+                          stroke="none"
+                          cx="1.338"
+                          cy="1.338"
                           class=""
-                          d="M0 0l3.043 2.323L6.086 0"
-                          transform="rotate(92 -823.135 974.633)"
-                        ></path>
+                          rx="1.338"
+                          ry="1.338"
+                        ></ellipse>
+                        <ellipse
+                          fill="none"
+                          cx="13.338"
+                          cy="13.338"
+                          class=""
+                          rx="12.838"
+                          ry="12.838"
+                        ></ellipse>
                       </g>
+                      <path
+                        class=""
+                        d="M0 0l3.043 2.323L6.086 0"
+                        transform="rotate(92 -823.135 974.633)"
+                      ></path>
                     </g>
                   </g>
-                </svg>
-                <span>Exterior design<br />3D detailed view</span>
-              </button>
+                </g>
+              </svg>
+              <span>Exterior design<br />3D detailed view</span>
+            </button>
           </div>
           <div class="section__img section__img--exterior"></div>
         </section>
@@ -320,14 +334,12 @@
             <h3 class="section__subtitle">interior</h3>
             <p class="section__text">
               The luxury of Italian craftsmanship meets state-of-the-art
-              technology. Aerospace-inspired design and
-              driver-oriented instrumentation, featuring three TFT
-              screens, make the driving experience more
-              comfortable and engaging.
-              The interior can be customized and made even more
-              sporty or elegant, thanks to the wide range of colors
-              and materials: leather, Alcantara, wood, aluminum or
-              carbon-fiber finishes.
+              technology. Aerospace-inspired design and driver-oriented
+              instrumentation, featuring three TFT screens, make the driving
+              experience more comfortable and engaging. The interior can be
+              customized and made even more sporty or elegant, thanks to the
+              wide range of colors and materials: leather, Alcantara, wood,
+              aluminum or carbon-fiber finishes.
             </p>
             <button class="btn btn-3d btn-3d--position">
               <svg

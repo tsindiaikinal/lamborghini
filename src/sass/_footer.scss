@@ -52,10 +52,12 @@
 
 .menu--footer {
   position: static;
-  min-height: auto;
+
   align-items: flex-start;
   flex-direction: column;
+
   width: auto;
+  min-height: auto;
   .menu__item {
     margin-bottom: 25px;
     &:last-child {
@@ -88,9 +90,10 @@ ul[class="socials"] {
 
     width: 20px;
     height: 20px;
+
     background-repeat: no-repeat;
-    background-size: cover;
     background-position: center;
+    background-size: cover;
   }
 }
 
@@ -126,6 +129,7 @@ ul[class="socials"] {
     &:checked + .label-checkbox::before {
       position: absolute;
       bottom: 3px;
+
       width: 20px;
       height: 20px;
 
@@ -163,10 +167,14 @@ ul[class="socials"] {
   position: relative;
   top: 3px;
   left: 10px;
+
   display: inline-block;
+
   width: 15px;
   height: 15px;
+
   cursor: pointer;
+
   border: 1px solid #fff;
   border-radius: 4px;
 }
@@ -250,7 +258,6 @@ ul[class="socials"] {
   }
 
   .socials {
-    justify-content: flex-start;
     padding-bottom: 40px;
     &__item {
       margin-right: 35px;

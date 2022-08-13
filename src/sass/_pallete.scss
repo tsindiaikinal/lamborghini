@@ -1,6 +1,7 @@
 /* ------ PALLETE ------ */
 .palette {
   position: relative;
+
   width: 295px;
   height: 185px;
   &-name {
@@ -17,22 +18,28 @@
 
 .paint {
   position: absolute;
+
   width: 60px;
   height: 60px;
   &:before {
-    display: inline-block;
     position: absolute;
     top: 30%;
     left: 25%;
+
+    display: inline-block;
+
     width: 30px;
     height: 30px;
+
     content: "";
+    transition: opacity 0.3s;
+
+    opacity: 0;
     background-image: url("../img/icons/icons.svg#paint-can");
     background-repeat: no-repeat;
     background-size: contain;
-    opacity: 0;
+
     filter: drop-shadow(0 0 0.3mm #fff);
-    transition: opacity 0.3s;
   }
   &:hover::before {
     opacity: 1;
@@ -68,11 +75,13 @@
   &-blue {
     top: 95px;
     left: 140px;
+
     filter: drop-shadow(1mm 1mm 1mm rgba(11, 58, 114, 1));
   }
   &-white {
     top: 95px;
     left: 237px;
+
     filter: drop-shadow(1mm 1mm 1mm rgba(0, 0, 0, 0.5));
   }
 }

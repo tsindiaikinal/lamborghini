@@ -102,3 +102,15 @@ function dropdownMenu() {
   this.classList.toggle("icon-close");
   document.querySelector("#main-menu").classList.toggle("show");
 }
+
+const mainSearch = document.querySelector("#main-search");
+const formSearch = document.querySelector(".form-search");
+const iconClose = document.querySelector(".form-search .close-popup");
+
+mainSearch.addEventListener("click", () =>
+  formSearch.classList.add("show-popup")
+);
+
+iconClose.addEventListener("click", () =>
+  formSearch.classList.remove("show-popup")
+);
