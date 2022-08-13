@@ -19,7 +19,7 @@
   let place = document.querySelector(".interactive-view__place");
   let palette = document.querySelector(".palette");
   let viewImg = document.querySelector(".interactive-view__elem");
-  let sourceImg = document.querySelector("source");
+  // let sourceImg = document.querySelector("source");
   let msg =
     '<h3 class="msg-warning">Sorry, this color is not currently available :(</h3>';
 
@@ -30,43 +30,43 @@
       switch (paint) {
         case "graphite":
           viewImg.src = cars.graphite;
-          sourceImg.srcset = cars.graphiteWebp;
+          // sourceImg.srcset = cars.graphiteWebp;
           viewImg.onerror = () => printErrorMsg();
           checkHideContent();
           break;
         case "yellow":
           viewImg.src = cars.yellow;
-          sourceImg.srcset = cars.yellowWebp;
+          // sourceImg.srcset = cars.yellowWebp;
           viewImg.onerror = () => printErrorMsg();
           checkHideContent();
           break;
         case "green":
           viewImg.src = cars.green;
-          sourceImg.srcset = cars.greenWebp;
+          // sourceImg.srcset = cars.greenWebp;
           viewImg.onerror = () => printErrorMsg();
           checkHideContent();
           break;
         case "orange":
           viewImg.src = cars.orange;
-          sourceImg.srcset = cars.orangeWebp;
+          // sourceImg.srcset = cars.orangeWebp;
           viewImg.onerror = () => printErrorMsg();
           checkHideContent();
           break;
         case "blue":
           viewImg.src = cars.blue;
-          sourceImg.srcset = cars.blueWebp;
+          // sourceImg.srcset = cars.blueWebp;
           viewImg.onerror = () => printErrorMsg();
           checkHideContent();
           break;
         case "white":
           viewImg.src = cars.white;
-          sourceImg.srcset = cars.whiteWebp;
+          // sourceImg.srcset = cars.whiteWebp;
           viewImg.onerror = () => printErrorMsg();
           checkHideContent();
           break;
         case "black":
           viewImg.src = cars.black;
-          sourceImg.srcset = cars.blackWebp;
+          // sourceImg.srcset = cars.blackWebp;
           viewImg.onerror = () => printErrorMsg();
           checkHideContent();
           break;

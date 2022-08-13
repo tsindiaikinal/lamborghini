@@ -28,20 +28,51 @@
 }
 @media screen and (max-width: $lg) {
   .model-info {
-  &__block {
-    width: 40%;
+    &__block {
+      width: 40%;
+    }
+    &__title {
+      font-size: 1.1rem;
+    }
+    &__data {
+      font-size: 1.5rem;
+    }
   }
-  &__title {
-    font-size: 1.1rem;
-  }
-  &__data {
-    font-size: 1.5rem;
-  }
-}
 }
 @media screen and (max-width: $md) {
+  .model-info {
+    &__block {
+      &:first-child {
+        flex: 0 1 43%;
+      }
+      &:nth-child(2) {
+        flex: 0 1 20%;
+      }
+      &:last-child {
+        flex: 0 1 20%;
+      }
+    }
+    &__title {
+      font-size: 1rem;
+    }
+    &__data {
+      font-size: 1.3rem;
+    }
+  }
 }
 @media screen and (max-width: $sm) {
+  .model-info {
+    flex-direction: column;
+    &__block {
+      width: 100%;
+    }
+    &__title {
+      font-size: 1rem;
+    }
+    &__data {
+      font-size: 1.3rem;
+    }
+  }
 }
 @media screen and (max-width: $xs) {
 }

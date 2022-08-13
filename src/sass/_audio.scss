@@ -37,8 +37,6 @@
       filter: drop-shadow(0 0 2mm rgba(255, 255, 255, 0.7));
     }
   }
-
-  // &__elem {}
 }
 .spectrum {
   &__elem {
@@ -58,24 +56,36 @@
     }
   }
 }
-// .icon-play {}
 .audio-player {
   height: 110px;
 }
 
 /* -------------------- MEDIA QUERIIS ------------------ */
-
-
-@media screen and (max-width: $xxl) {
-}
-@media screen and (max-width: $xl) {
-}
 @media screen and (max-width: $lg) {
+  .audio {
+    align-self: center;
+  }
 }
 @media screen and (max-width: $md) {
 }
 @media screen and (max-width: $sm) {
 }
-@media screen and (max-width: $xs) {
+@media screen and (max-width: 479.98px) {
+  .audio {
+    height: 90px;
+    padding: 10px 10px;
+    &__headphones-icon {
+      background-size: contain;
+    }
+    &__spectrum {
+      flex: 0 0 auto;
+      padding: 0 10px;
+    }
+  }
+  .spectrum {
+    &__elem {
+      margin: 0 3px;
+    }
+  }
 }
 /* ---------------------- */

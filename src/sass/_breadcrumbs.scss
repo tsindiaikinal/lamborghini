@@ -30,3 +30,24 @@
     font-weight: 700;
   }
 }
+/* ---------------------------- */
+
+/* -------------------- MEDIA QUERIIS ------------------ */
+
+
+@media screen and (max-width: $xxl) {
+}
+@media screen and (max-width: $xl) {
+}
+@media screen and (max-width: $lg) {
+  .breadcrumbs {
+    padding-top: 7.5rem;
+  }
+}
+@media screen and (max-width: $md) {
+}
+@media screen and (max-width: $sm) {
+}
+@media screen and (max-width: $xs) {
+}
+/* ----------------------------------------------------------- */

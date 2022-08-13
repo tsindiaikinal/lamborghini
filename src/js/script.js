@@ -14,7 +14,7 @@ import Swiper, {
   Controller,
 } from "swiper";
 
-const swiperImg = new Swiper(".slider-img", {
+const swiperImg = new Swiper(".image-slider", {
   modules: [Lazy, Controller],
   direction: "horizontal",
   slidesPerView: 1,
@@ -28,7 +28,7 @@ const swiperImg = new Swiper(".slider-img", {
 });
 
 // init Swiper:
-const swiperInfo = new Swiper(".slider-specification", {
+const swiperInfo = new Swiper(".specification-slider", {
   // configure Swiper to use modules
   modules: [Navigation, Lazy, EffectFade, Controller],
   direction: "horizontal",
@@ -99,8 +99,6 @@ const burger = document.querySelector(".icon-menu");
 burger.addEventListener("click", dropdownMenu);
 
 function dropdownMenu() {
-  document.querySelector(".navbar").classList.toggle("show");
   this.classList.toggle("icon-close");
-  let mainMenu = document.querySelector("#main-menu");
-  mainMenu.classList.toggle("show");
+  document.querySelector("#main-menu").classList.toggle("show");
 }

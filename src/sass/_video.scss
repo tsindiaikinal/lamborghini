@@ -13,3 +13,29 @@
   }
 }
 /* ------------------------------------------------ */
+
+/* -------------------- MEDIA QUERIIS ------------------ */
+
+@media screen and (max-width: $xxl) {
+}
+@media screen and (max-width: $xl) {
+}
+@media screen and (max-width: $lg) {
+}
+@media screen and (max-width: $md) {
+  .video {
+    padding: 17px;
+    border: 18px solid rgba(255, 255, 255, 0.3);
+    background-color: rgba(204, 204, 204, 0.5);
+    &__player {
+      width: 100%;
+    }
+  }
+}
+@media screen and (max-width: $sm) {
+  .media__container {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+}
+/* ----------------------------------------------------------- */

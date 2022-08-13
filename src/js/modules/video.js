@@ -6,7 +6,7 @@
   watch.addEventListener("click", () => {
     videoplayer.play();
     watch.style.visibility = "hidden";
-    videoplayer.controls = true;
+    videoplayer.controls = "controls";
   });
   
   videoplayer.onplay = () => (watch.style.visibility = "hidden");
