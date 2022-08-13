@@ -1,0 +1,140 @@
+/* ------- SEARCH FORM -------- */
+.form-search {
+  position: fixed;
+  z-index: 5;
+
+  overflow: hidden;
+
+  width: 100%;
+
+  transition: transform 0.5s;
+  transform: translateY(-100%);
+
+  background-color: #202020;
+  &__container {
+    display: flex;
+    overflow-y: auto;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 100vh;
+    padding-top: 205px !important;
+    padding-bottom: 40px !important;
+    &:before {
+      position: absolute;
+      z-index: 6;
+      top: 0;
+      left: 0;
+
+      display: block;
+
+      width: 100%;
+      height: 150px;
+
+      content: "";
+
+      background-color: #202020;
+    }
+  }
+
+  &__title {
+    padding: 100px 0;
+
+    color: #fff;
+
+    font-size: 2rem;
+  }
+  &__body {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 60px;
+    padding: 150px 0 10px;
+
+    border-bottom: 1px solid rgba($color: #fff, $alpha: 0.7);
+    // flex: 1 1 auto;
+
+    font-size: 1.5rem;
+  }
+  &__field {
+    width: 100%;
+
+    color: #fff;
+    border: none;
+    outline: none;
+    background: none;
+    &::placeholder {
+      color: rgba($color: #fff, $alpha: 0.6);
+
+      font-weight: 300;
+    }
+  }
+
+  &__btn {
+    padding-left: 15px;
+
+    text-align: right;
+
+    color: #fff;
+  }
+}
+
+.result-search {
+  padding-top: 25px;
+  padding-bottom: 40px;
+  //   overflow-y: auto;
+}
+
+.close-popup {
+  align-self: flex-end;
+
+  padding-top: 20px;
+
+  cursor: pointer;
+
+  font-size: 2.2rem;
+}
+
+.show-popup.form-search {
+  transform: translateY(0);
+}
+/* ------------------------- */
+/* -------------------- MEDIA QUERIIS ------------------ */
+@media screen and (max-width: $lg) {
+  .form-search {
+    &__container {
+      padding-top: 120px !important;
+      &:before {
+        height: 130px;
+      }
+    }
+
+    &__title {
+      padding: 40px 0;
+    }
+    &__body {
+      margin-bottom: 40px;
+      padding: 75px 0 10px;
+    }
+  }
+  // .result-search {}
+}
+@media screen and (max-width: 479.98px) {
+  .form-search {
+    &__title {
+      padding: 40px 0;
+
+      font-size: 1.8rem;
+    }
+    &__body {
+      padding: 40px 0 10px;
+    }
+    &__field {
+      &::placeholder {
+        font-size: 1rem;
+      }
+    }
+  }
+  // .result-search {}
+}
+/* ----------------------------------------------------------- */
